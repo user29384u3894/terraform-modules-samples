@@ -1,0 +1,22 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: ~1.5
+      - name: Terraform Version
+        run: terraform -version
+      - name: Check git diff is clean (all files generated should be committed)
+        run: git diff --exit-code
+      - name: Terraform Format Check
+        run: make fmt-check
+      - name: Terraform Validate
+        run: make validate
