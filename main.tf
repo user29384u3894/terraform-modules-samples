@@ -1,7 +1,7 @@
-variable "text" {
+variable "input" {
   type = string
 }
 module "main" {
   source = "./echo"
-  text   = var.text
+  input  = var.input
 }

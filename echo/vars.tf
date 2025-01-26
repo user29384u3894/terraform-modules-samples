@@ -1,3 +1,3 @@
-variable "text" {
+variable "input" {
   type = string
 }

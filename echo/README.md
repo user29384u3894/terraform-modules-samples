@@ -7,7 +7,7 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| text | n/a | `string` | n/a | yes |
+| input | n/a | `string` | n/a | yes |
 
 ### Outputs
 

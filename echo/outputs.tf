@@ -1,3 +1,3 @@
 output "output" {
-  value = format("echo-%s", var.text)
+  value = format("echo-%s", var.input)
 }
