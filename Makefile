@@ -1,6 +1,11 @@
 TF_DIRS = $(patsubst %/main.tf, %, $(shell find . -type d -name .terraform -prune -o -name 'main.tf' -print))
 VALIDATE_TF_DIRS = $(addprefix validate-,$(TF_DIRS))
 
+# Generate docs
+.PHONY: docs
+docs:
+	terraform-docs --config docs/.terraform-docs.yaml ./echo
+
 # Format all terraform files
 fmt:
 	terraform fmt -recursive
