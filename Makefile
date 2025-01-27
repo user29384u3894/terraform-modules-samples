@@ -5,6 +5,7 @@ VALIDATE_TF_DIRS = $(addprefix validate-,$(TF_DIRS))
 .PHONY: docs
 docs:
 	terraform-docs --config docs/.terraform-docs.yaml ./echo
+	terraform-docs --config docs/.terraform-docs.yaml ./gcp-gcs
 
 # Format all terraform files
 fmt:
