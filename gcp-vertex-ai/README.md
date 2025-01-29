@@ -19,8 +19,11 @@
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | access\_token | n/a | `string` | n/a | yes |
+| app\_id | n/a | `string` | n/a | yes |
+| env\_id | n/a | `string` | n/a | yes |
 | location | n/a | `string` | n/a | yes |
-| target\_project\_id | n/a | `string` | n/a | yes |
+| project\_id | n/a | `string` | n/a | yes |
+| res\_id | n/a | `string` | n/a | yes |
 
 ### Outputs
 
