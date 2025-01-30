@@ -9,6 +9,7 @@ docs:
 	terraform-docs --config docs/.terraform-docs.yaml ./gcp-gcs-iam
 	terraform-docs --config docs/.terraform-docs.yaml ./gcp-vertex-ai
 	terraform-docs --config docs/.terraform-docs.yaml ./gcp-vertex-ai-iam
+	terraform-docs --config docs/.terraform-docs.yaml ./gcp-memorystore-redis
 
 # Format all terraform files
 fmt:
