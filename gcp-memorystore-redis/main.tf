@@ -16,5 +16,6 @@ resource "google_redis_instance" "memorystore" {
 }
 
 data "google_compute_network" "vpc" {
-  name = var.network
+  name    = var.network
+  project = var.project_id
 }
