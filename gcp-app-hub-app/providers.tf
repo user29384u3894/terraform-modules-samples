@@ -17,7 +17,6 @@ provider "google" {
     "humanitec"  = "true"
     "hum-app"    = var.app_id
     "hum-env"    = var.env_id
-    "hum-res"    = replace(var.res_id, ".", "-")
     "managed-by" = "terraform"
   }
 }

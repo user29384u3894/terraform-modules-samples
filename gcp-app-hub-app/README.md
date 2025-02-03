@@ -23,5 +23,4 @@
 | env\_id | n/a | `string` | n/a | yes |
 | project\_id | n/a | `string` | n/a | yes |
 | region | n/a | `string` | n/a | yes |
-| res\_id | n/a | `string` | n/a | yes |
 <!-- END_TF_DOCS -->
