@@ -28,6 +28,7 @@
 | region | n/a | `string` | n/a | yes |
 | res\_id | n/a | `string` | n/a | yes |
 | network | n/a | `string` | `"default"` | no |
+| redis\_version | n/a | `string` | `"REDIS_7_2"` | no |
 
 ### Outputs
 
