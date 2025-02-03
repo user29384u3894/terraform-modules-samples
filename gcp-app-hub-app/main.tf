@@ -3,10 +3,10 @@ resource "google_apphub_application" "apphub_app" {
   application_id = var.app_id
   scope {
     type = "GLOBAL"
-    attributes {
+  }
+  attributes {
       environment {
         type = var.env_id
       }
     }
-  }
 }

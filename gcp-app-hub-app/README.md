@@ -7,14 +7,12 @@
 | Name | Version |
 |------|---------|
 | google | n/a |
-| random | n/a |
 
 ### Resources
 
 | Name | Type |
 |------|------|
-| [google_storage_bucket.bucket](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/storage_bucket) | resource |
-| [random_string.bucket_name](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string) | resource |
+| [google_apphub_application.apphub_app](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apphub_application) | resource |
 
 ### Inputs
 
@@ -26,10 +24,4 @@
 | project\_id | n/a | `string` | n/a | yes |
 | region | n/a | `string` | n/a | yes |
 | res\_id | n/a | `string` | n/a | yes |
-
-### Outputs
-
-| Name | Description |
-|------|-------------|
-| name | n/a |
 <!-- END_TF_DOCS -->
