@@ -6,7 +6,7 @@ resource "google_apphub_application" "apphub_app" {
   }
   attributes {
     environment {
-      type = upper(var.env_id)
+      type = upper(var.env_type)
     }
   }
 }
