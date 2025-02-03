@@ -21,6 +21,7 @@
 | access\_token | n/a | `string` | n/a | yes |
 | app\_id | n/a | `string` | n/a | yes |
 | env\_id | n/a | `string` | n/a | yes |
+| env\_type | n/a | `string` | n/a | yes |
 | project\_id | n/a | `string` | n/a | yes |
 | region | n/a | `string` | n/a | yes |
 <!-- END_TF_DOCS -->
