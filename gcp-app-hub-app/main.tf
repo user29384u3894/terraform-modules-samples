@@ -5,8 +5,8 @@ resource "google_apphub_application" "apphub_app" {
     type = "GLOBAL"
   }
   attributes {
-      environment {
-        type = var.env_id
-      }
+    environment {
+      type = var.env_id
     }
+  }
 }
