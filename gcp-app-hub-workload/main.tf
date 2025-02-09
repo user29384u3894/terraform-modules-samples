@@ -25,6 +25,11 @@ resource "google_apphub_workload" "apphub_workload" {
   application_id      = data.google_apphub_application.apphub_app.application_id
   workload_id         = local.workload_id
   discovered_workload = data.google_apphub_discovered_workload.apphub_workload.name
+  attributes {
+    environment {
+      type = upper(var.env_type)
+    }
+  }
 }
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/apphub_discovered_service
 data "google_apphub_discovered_service" "apphub_service" {
@@ -40,4 +45,9 @@ resource "google_apphub_service" "apphub_service" {
   application_id     = data.google_apphub_application.apphub_app.application_id
   service_id         = local.workload_id
   discovered_service = data.google_apphub_discovered_service.apphub_service[count.index].name
+  attributes {
+    environment {
+      type = upper(var.env_type)
+    }
+  }
 }

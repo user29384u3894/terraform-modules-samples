@@ -8,6 +8,9 @@ variable "app_id" {
 variable "env_id" {
   type = string
 }
+variable "env_type" {
+  type = string
+}
 variable "res_id" {
   type = string
 }

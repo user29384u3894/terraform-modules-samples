@@ -25,6 +25,7 @@
 | access\_token | n/a | `string` | n/a | yes |
 | app\_id | n/a | `string` | n/a | yes |
 | env\_id | n/a | `string` | n/a | yes |
+| env\_type | n/a | `string` | n/a | yes |
 | gke\_name | n/a | `string` | n/a | yes |
 | gke\_project\_number | n/a | `string` | n/a | yes |
 | namespace | n/a | `string` | n/a | yes |
