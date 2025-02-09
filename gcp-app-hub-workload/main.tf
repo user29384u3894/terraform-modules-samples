@@ -1,8 +1,8 @@
 locals {
   application_id = "${var.app_id}-${var.env_id}"
   workload_id    = split(".", var.res_id)[1]
-  prefix_uri     = "//container.googleapis.com/projects/${var.gke_project_number}/locations/${var.region}/clusters/${var.gke_name}/k8s/namespaces/${var.namespace}/apps"
-  workload_uri   = "${local.prefix_uri}/deployments/${local.workload_id}"
+  prefix_uri     = "//container.googleapis.com/projects/${var.gke_project_number}/locations/${var.region}/clusters/${var.gke_name}/k8s/namespaces/${var.namespace}"
+  workload_uri   = "${local.prefix_uri}/apps/deployments/${local.workload_id}"
   service_uri    = "${local.prefix_uri}/services/${local.workload_id}"
 }
 
