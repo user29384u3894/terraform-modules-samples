@@ -26,3 +26,7 @@ variable "gke_name" {
 variable "namespace" {
   type = string
 }
+variable "create_service" {
+  type    = bool
+  default = true
+}
