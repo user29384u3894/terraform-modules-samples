@@ -28,14 +28,14 @@ resource "google_apphub_workload" "apphub_workload" {
 }
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/apphub_discovered_service
 data "google_apphub_discovered_service" "apphub_service" {
-  count       = var.create_service ? 0 : 1
+  count       = var.create_service ? 1 : 0
   location    = var.region
   service_uri = local.service_uri
 }
 
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apphub_service
 resource "google_apphub_service" "apphub_service" {
-  count              = var.create_service ? 0 : 1
+  count              = var.create_service ? 1 : 0
   location           = var.region
   application_id     = data.google_apphub_application.apphub_app.application_id
   service_id         = local.workload_id
